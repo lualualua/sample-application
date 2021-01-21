@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SampleAppMicrowave
 //
-//  Created by 荒川らいら on 18/01/21.
+//  Created by on 18/01/21.
 //
 
 import UIKit
