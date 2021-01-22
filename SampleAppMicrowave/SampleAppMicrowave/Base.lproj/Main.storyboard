@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="PPb-SF-lXA">
-                                <rect key="frame" x="96" y="501.5" width="128" height="39"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="PPb-SF-lXA">
+                                <rect key="frame" x="96" y="438" width="128" height="39"/>
                                 <subviews>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Y9f-QQ-jFH">
                                         <rect key="frame" x="0.0" y="0.0" width="49" height="39"/>
@@ -26,6 +26,9 @@
                                             <string key="title">ストップ/
 取り消し</string>
                                         </state>
+                                        <connections>
+                                            <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYr-YQ-MUl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MHg-9o-j6D">
                                         <rect key="frame" x="79" y="0.0" width="49" height="39"/>
@@ -34,24 +37,55 @@
                                             <string key="title">スタート/
 30秒追加</string>
                                         </state>
+                                        <connections>
+                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5P2-5k-O0W"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUY-IK-BBC">
-                                <rect key="frame" x="113.5" y="153" width="93" height="74"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="Hfs-N2-du5"/>
-                                    <constraint firstAttribute="width" constant="93" id="mDb-Me-YLy"/>
-                                </constraints>
-                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wbz-Xo-drg">
+                                <rect key="frame" x="0.0" y="200" width="320" height="216"/>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ck8-hh-Cq7">
+                                <rect key="frame" x="37" y="94" width="246.5" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bO-XW-spg">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njq-4d-shE">
+                                        <rect key="frame" x="118" y="0.0" width="10.5" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsY-5u-WV0">
+                                        <rect key="frame" x="128.5" y="0.0" width="118" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Wbz-Xo-drg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="24" id="1uU-yP-lr2"/>
+                            <constraint firstItem="Ck8-hh-Cq7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4qd-wU-yYW"/>
+                            <constraint firstItem="Wbz-Xo-drg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GQZ-CF-Ubb"/>
+                            <constraint firstItem="PPb-SF-lXA" firstAttribute="top" secondItem="Wbz-Xo-drg" secondAttribute="bottom" constant="22" id="MZJ-4t-ZgH"/>
                             <constraint firstItem="PPb-SF-lXA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sca-jn-JH0"/>
-                            <constraint firstItem="gUY-IK-BBC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zqA-Qm-cyU"/>
+                            <constraint firstItem="Wbz-Xo-drg" firstAttribute="top" secondItem="Ck8-hh-Cq7" secondAttribute="bottom" constant="45" id="vbz-7e-fZU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="minLabel" destination="4bO-XW-spg" id="Qqs-ut-ypB"/>
+                        <outlet property="pickerView" destination="Wbz-Xo-drg" id="nBW-dt-zEO"/>
+                        <outlet property="secLabel" destination="IsY-5u-WV0" id="FFy-In-5WH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
