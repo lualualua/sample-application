@@ -19,7 +19,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="PPb-SF-lXA">
                                 <rect key="frame" x="75" y="444" width="170" height="45"/>
                                 <subviews>
-                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Y9f-QQ-jFH">
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Y9f-QQ-jFH">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="02g-Sg-yM0"/>
@@ -35,7 +35,7 @@
                                             <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYr-YQ-MUl"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MHg-9o-j6D">
+                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MHg-9o-j6D">
                                         <rect key="frame" x="100" y="0.0" width="70" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="WwQ-Iy-0pR"/>
@@ -44,7 +44,7 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                         <state key="normal">
                                             <string key="title">スタート/
-30秒追加</string>
+再開</string>
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
